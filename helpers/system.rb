@@ -12,7 +12,7 @@ class System
   end
 
   def self.codename
-    look_for /Codename:(\s|\t)*(.*)/, shell 'lsb_release -c' do |matches|
+    look_for(/Codename:(\s|\t)*(.*)/, shell 'lsb_release -c') do |matches|
       matches.first[1]
     end
   end
