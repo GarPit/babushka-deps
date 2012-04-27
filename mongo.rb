@@ -3,7 +3,7 @@ dep 'latest mongo' do
 end
 
 dep 'mongo.apt_repository' do
-  url "http://downloads-distro.mongodb.org/repo/ubuntu-upstart"
+  url "http://downloads-distro.mongodb.org/repo/debian-sysvinit"
   components "dist", "10gen"
 
   after do
